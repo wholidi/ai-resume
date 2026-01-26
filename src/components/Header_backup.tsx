@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Mail, Linkedin, Github } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
@@ -52,50 +52,19 @@ const Header = ({ onOpenChat }: HeaderProps) => {
 
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
-          
-          {/* GitHub */}
-          <a
-            href="https://wholidi.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Github className="w-5 h-5" />
-          </a>        
-          
-          {/* Linkedin */}
-          <a
-            href="https://www.linkedin.com/in/whartono/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Linkedin className="w-5 h-5" />
-          </a>
-
-          {/* Email */}
-          <a
-            href="mailto:wholidipro@urielle-ai.com"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Mail className="w-5 h-5" />
-          </a>
-
+        <div className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection("experience")}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Experience
           </button>
-
           <button
             onClick={() => scrollToSection("fit-assessment")}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Fit Check
           </button>
-
           <button
             onClick={handleAskAI}
             className="text-sm px-4 py-2 bg-accent text-accent-foreground rounded-full hover:opacity-90 transition-opacity"
@@ -123,34 +92,12 @@ const Header = ({ onOpenChat }: HeaderProps) => {
             >
               Experience
             </button>
-
             <button
               onClick={() => scrollToSection("fit-assessment")}
               className="block w-full text-left text-muted-foreground hover:text-foreground transition-colors"
             >
               Fit Check
             </button>
-
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/in/whartono/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-left text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              LinkedIn
-            </a>
-
-            {/* Email */}
-            <a
-              href="mailto:wholidipro@urielle-ai.com"
-              className="block w-full text-left text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Email
-            </a>
-
             <button
               onClick={handleAskAI}
               className="block w-full text-left text-accent hover:opacity-80 transition-opacity"

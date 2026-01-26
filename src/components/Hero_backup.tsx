@@ -35,46 +35,16 @@ const Hero = ({ onOpenChat }: HeroProps) => {
 
         {/* Company badges */}
         <div className="flex flex-wrap gap-3 mb-12 animate-slide-up stagger-3">
-          {marcusProfile.companies.map((company) => {
-            // Urielle-AI → external link
-            if (company === "Urielle-AI") {
-              return (
-                <a
-                  key={company}
-                  href="https://urielle-ai.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-card border border-border rounded-full text-sm text-foreground hover:border-primary hover:text-primary transition"
-                >
-                  {company}
-                </a>
-              );
-            }
-
-            // Others → internal scroll
-            const id = `company-${company
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, "-")
-              .replace(/(^-|-$)/g, "")}`;
-
-            return (
-              <button
-                key={company}
-                type="button"
-                onClick={() =>
-                  document.getElementById(id)?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  })
-                }
-                className="px-4 py-2 bg-card border border-border rounded-full text-sm text-foreground hover:border-primary hover:text-primary transition"
-              >
-                {company}
-              </button>
-            );
-          })}
+          {marcusProfile.companies.map((company) => (
+            <span
+              key={company}
+              className="px-4 py-2 bg-card border border-border rounded-full text-sm text-foreground"
+            >
+              {company}
+            </span>
+          ))}
         </div>
-       
+
         {/* CTA Button */}
         <button
           onClick={onOpenChat}

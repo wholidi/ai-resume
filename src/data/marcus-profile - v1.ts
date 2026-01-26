@@ -6,39 +6,20 @@ export const marcusProfile = {
   subtitle:
     "AI Governance & Safety | Certified AI Auditor (FHCA) | EU AI Act | Bridging Enterprise Digital Transformation & AI Risk",
   location: "Singapore",
-  status: "Open to collaborations on digital transformation / AI Audit / Safety / Governance projects",
+  status: "Open to consulting collaborations and enterprise transformation / AI governance roles",
 
   // Keep this list aligned to your real portfolio (high-signal clients)
-  companies: ["Urielle-AI", "Seagate", "KPMG", "Orica", "L’Oréal (Travel Retail)", "Johnson & Johnson"],
+  companies: ["Seagate", "KPMG (DOLE)", "Orica", "L’Oréal (Travel Retail)", "Johnson & Johnson"],
 
   summary: `I work at the intersection of enterprise digital transformation and AI risk/governance.
 My strength is turning complex, cross-functional programs into practical delivery: data + process + controls.
 In AI governance, I focus on audit-ready evidence: what was decided, why, how it is monitored, and where the risks are.`,
 
   experience: [
-   {
-  company: "Urielle-AI",
-  role: "AI Safety - Governance - Audit Lead",
-  period: "Dec 2025 – Present",
-  highlights: [
-    "Built AI Governance & Safety consultancy focused on EU AI Act readiness",
-    "Designed AI audit frameworks covering model risk, data lineage, and compliance",
-    "Developed AI risk scoring methodology for enterprise AI systems",
-    "Publishing AI Safety & Audit thought leadership and enterprise tooling"
-  ],
-    aiContext: {
-    situation: "Organizations adopting AI lacked structured governance, audit readiness, and EU AI Act alignment.",
-    approach: "Translate regulatory and safety requirements into practical engineering and governance controls.",
-    technicalWork: "AI risk assessment frameworks, audit checklists, model documentation standards, system traceability, and safety evaluation workflows.",
-    lessonsLearned: "AI governance succeeds when risk, engineering, and business teams share a common framework — not when compliance is treated as a checklist."
-  },
-  },
-
-
     {
       company: "Seagate",
       role: "Digital Factory Planning Lead",
-      period: "Dec 2020 - Present",
+      period: "Recent",
       highlights: [
         "Led enterprise-scale digital factory planning initiatives across complex manufacturing environments",
         "Aligned cross-functional stakeholders (planning, operations, IT/data) to deliver measurable process improvement",
@@ -56,7 +37,7 @@ In AI governance, I focus on audit-ready evidence: what was decided, why, how it
       },
     },
     {
-      company: "KPMG",
+      company: "KPMG for DOLE",
       role: "Digital Data Transformation Lead",
       period: "Recent",
       highlights: [

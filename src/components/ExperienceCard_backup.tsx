@@ -28,16 +28,9 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
-    const companyId = `company-${company
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")}`;
-
   return (
     <div
-      id={companyId}
       className={cn(
-        "scroll-mt-28",  
         "group relative p-6 md:p-8 bg-card border border-border rounded-2xl transition-all duration-300 hover:border-accent/50",
         "animate-slide-up opacity-0"
       )}

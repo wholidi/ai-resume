@@ -75,6 +75,13 @@ const AIChat = ({ isOpen, onClose }: AIChatProps) => {
     }, 500);
   };
 
+  const handleBackToHome = () => {
+    setIsTyping(false);
+    setDisplayedResponse("");
+    setMessages([]);
+    setInput("");
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -87,19 +94,31 @@ const AIChat = ({ isOpen, onClose }: AIChatProps) => {
               M
             </div>
             <div>
-              <p className="text-foreground font-medium">Ask AI About Marcus</p>
+              <p className="text-foreground font-medium">Ask AI About William</p>
               <p className="text-xs text-muted-foreground flex items-center gap-1">
                 <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
                 Ready to answer your questions
               </p>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary"
-          >
-            <X className="w-5 h-5" />
-          </button>
+
+          <div className="flex items-center gap-2">
+            {messages.length > 0 && (
+              <button
+                onClick={handleBackToHome}
+                className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary"
+              >
+                ← Back
+              </button>
+            )}
+
+            <button
+              onClick={onClose}
+              className="p-2 text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Messages */}
@@ -107,11 +126,9 @@ const AIChat = ({ isOpen, onClose }: AIChatProps) => {
           {messages.length === 0 && !isTyping && (
             <div className="h-full flex flex-col items-center justify-center text-center px-6">
               <Sparkles className="w-12 h-12 text-accent mb-4" />
-              <h3 className="text-xl font-serif text-foreground mb-2">
-                What would you like to know?
-              </h3>
+              <h3 className="text-xl font-serif text-foreground mb-2">What would you like to know?</h3>
               <p className="text-muted-foreground text-sm mb-6 max-w-md">
-                Ask specific questions about Marcus's experience, skills, or fit for your role. Get honest, detailed answers.
+                Ask specific questions about William's experience, skills, or fit for your role. Get honest, detailed answers.
               </p>
               <div className="w-full max-w-md space-y-2">
                 {suggestedQuestions.map((q, i) => (
@@ -128,13 +145,7 @@ const AIChat = ({ isOpen, onClose }: AIChatProps) => {
           )}
 
           {messages.map((msg, i) => (
-            <div
-              key={i}
-              className={cn(
-                "flex",
-                msg.role === "user" ? "justify-end" : "justify-start"
-              )}
-            >
+            <div key={i} className={cn("flex", msg.role === "user" ? "justify-end" : "justify-start")}>
               <div
                 className={cn(
                   "max-w-[85%] rounded-2xl px-4 py-3",

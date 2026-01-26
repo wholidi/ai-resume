@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import FitAssessment from "@/components/FitAssessment";
 import AIChat from "@/components/AIChat";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 
 const Index = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -19,7 +19,7 @@ const Index = () => {
         <Experience />
         <FitAssessment />
       </main>
-      <Footer />
+      {/* <Footer /> */}
       <AIChat isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
     </div>
   );

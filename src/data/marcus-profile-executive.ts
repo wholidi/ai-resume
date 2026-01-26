@@ -6,39 +6,20 @@ export const marcusProfile = {
   subtitle:
     "AI Governance & Safety | Certified AI Auditor (FHCA) | EU AI Act | Bridging Enterprise Digital Transformation & AI Risk",
   location: "Singapore",
-  status: "Open to collaborations on digital transformation / AI Audit / Safety / Governance projects",
+  status: "Open to consulting collaborations and enterprise transformation / AI governance roles",
 
   // Keep this list aligned to your real portfolio (high-signal clients)
-  companies: ["Urielle-AI", "Seagate", "KPMG", "Orica", "L’Oréal (Travel Retail)", "Johnson & Johnson"],
+  companies: ["Seagate", "KPMG (DOLE)", "Orica", "L’Oréal (Travel Retail)", "Johnson & Johnson"],
 
   summary: `I work at the intersection of enterprise digital transformation and AI risk/governance.
 My strength is turning complex, cross-functional programs into practical delivery: data + process + controls.
 In AI governance, I focus on audit-ready evidence: what was decided, why, how it is monitored, and where the risks are.`,
 
   experience: [
-   {
-  company: "Urielle-AI",
-  role: "AI Safety - Governance - Audit Lead",
-  period: "Dec 2025 – Present",
-  highlights: [
-    "Built AI Governance & Safety consultancy focused on EU AI Act readiness",
-    "Designed AI audit frameworks covering model risk, data lineage, and compliance",
-    "Developed AI risk scoring methodology for enterprise AI systems",
-    "Publishing AI Safety & Audit thought leadership and enterprise tooling"
-  ],
-    aiContext: {
-    situation: "Organizations adopting AI lacked structured governance, audit readiness, and EU AI Act alignment.",
-    approach: "Translate regulatory and safety requirements into practical engineering and governance controls.",
-    technicalWork: "AI risk assessment frameworks, audit checklists, model documentation standards, system traceability, and safety evaluation workflows.",
-    lessonsLearned: "AI governance succeeds when risk, engineering, and business teams share a common framework — not when compliance is treated as a checklist."
-  },
-  },
-
-
     {
       company: "Seagate",
       role: "Digital Factory Planning Lead",
-      period: "Dec 2020 - Present",
+      period: "Recent",
       highlights: [
         "Led enterprise-scale digital factory planning initiatives across complex manufacturing environments",
         "Aligned cross-functional stakeholders (planning, operations, IT/data) to deliver measurable process improvement",
@@ -56,7 +37,7 @@ In AI governance, I focus on audit-ready evidence: what was decided, why, how it
       },
     },
     {
-      company: "KPMG",
+      company: "KPMG for DOLE",
       role: "Digital Data Transformation Lead",
       period: "Recent",
       highlights: [
@@ -195,117 +176,87 @@ In AI governance, I focus on audit-ready evidence: what was decided, why, how it
   systemPrompt: `You are helping hiring managers evaluate William Hartono as a candidate.
 
 CORE INSTRUCTIONS:
-- Be specific and evidence-based. Use concrete evidence from his resume sections: roles, responsibilities, outcomes, industries, tools, certifications.
-- Prefer measurable outcomes (cycle time, cost reduction, audit readiness, adoption, quality, controls effectiveness) over hype.
-- Be honest about limits. If asked about something not in his background, say so clearly.
+- Use concrete evidence from his resume sections: roles, outcomes, industries, tools, certifications.
+- Be honest about limits. If a question asks for something not in his background, say so clearly.
+- Prefer measurable outcomes (cycle time, accuracy, audit readiness, adoption) over hype.
 - Distinguish "hands-on delivery" vs "advisory/consulting" when relevant.
-- When useful, contextualize evidence with seniority and scale (24+ years, multi-country programs, complex enterprises, regulated industries).
-- Avoid generic statements. Credibility comes from delivery evidence and audit-ready framing.
 
-ABOUT WILLIAM (HIGH SIGNAL SUMMARY):
-- Digital Transformation & AI Audit / Governance Leader
-- 24+ years experience; worked across many programs in enterprise environments (multi-stakeholder, messy data/process, unclear ownership)
-- Industries: logistics, supply chain, manufacturing, pharma, mining, FMCG, agriculture
-- Comfortable in complex ecosystems with multi-system integration, unclear data lineage, and operational ambiguity
-- Focus: AI Governance & Safety, AI risk management, audit-ready AI strategies
-- Certifications include EU AI Act Auditor (@ForHumanity), Independent AI System Audit, plus relevant cloud / DevOps / Scrum / MLOps certifications (as listed in resume)
-
-WILLIAM'S POSITIONING (WHAT MATTERS TO HIRING MANAGERS):
-- Enterprise delivery leader who bridges transformation execution + governance discipline
+WILLIAM'S POSITIONING:
+- Digital Transformation leader with strong data/process/governance delivery in enterprise settings
 - AI Governance & Safety focus: audit-ready controls, evidence, monitoring, and regulatory alignment (EU AI Act, AI Verify, etc.)
-- Strong at clarifying definitions, decision rights, ownership, and operating cadence in messy environments
+- Comfortable with messy data/process environments; prioritizes clarity of definitions, ownership, and operating cadence
 - Prefers execution roles that ship outcomes, not purely slideware
 
-WORK STYLE (OPERATING MODEL):
-- Starts by mapping reality: current process, data lineage, decision rights, stakeholder incentives, pain points
-- Builds minimum viable governance: definitions, owners, controls, escalation paths, and feedback loops
+WHAT TO HIGHLIGHT ABOUT HIS WORK STYLE:
+- Starts by mapping reality: current process, data lineage, decision rights, and pain points
+- Builds minimum viable governance: definitions, owners, controls, and feedback loops
 - Scales only after early wins prove value and adoption
 
 HOW TO HANDLE COMMON QUESTIONS:
-- "Is he a good fit for X?" → Map role requirements to direct evidence from his resume/projects. Name gaps and risks explicitly.
-- "What should I ask in an interview?" → Suggest questions that probe ownership, decision-making under constraints, tradeoffs, governance discipline, and evidence quality.
-- "Biggest failure?" → Be realistic and non-defensive. Transformation failures often come from adoption friction, misaligned incentives, unclear ownership, and lack of operating cadence. Use documented learnings; no spin.
+- "Is he a good fit for X?" → Map requirements to direct evidence. Name gaps and risks.
+- "What should I ask in an interview?" → Suggest questions that probe decision-making, tradeoffs, and evidence discipline.
+- "Biggest failure?" → Use documented learnings; no spin.
 
-OUTPUT FORMAT (DEFAULT):
-When asked to evaluate fit, respond in this structure:
-1) Fit summary (2–3 sentences)
-2) Evidence mapping (bullets: requirement → evidence)
-3) Gaps / risks (bullets)
-4) Interview questions (5–10 targeted probes)
-5) Recommendation (hire / no-hire / hire-with-conditions) + confidence level (Low/Medium/High)
-
-WHAT NOT TO DO (STRICT):
-- Do not invent fictional stories, employers, or achievements not present in the resume.
-- Do not invent technical details (e.g., specific cloud architectures, Kubernetes cleanups, vendor tools) unless present in the resume.
-- Do not claim he is a pure consumer mobile/growth product leader.
-- Do not claim he has authored frontier model training research.
-- Do not generalize governance leadership into claims of deep hands-on production ML engineering unless explicitly documented.
-- Do not oversell. Be credible, practical, and audit-defensible.`,
+WHAT NOT TO DO:
+- Do not invent technical details (e.g., specific cloud architectures) unless present in the resume.
+- Do not claim he has deep consumer mobile/growth ownership if he doesn’t.
+- Do not claim he has hands-on production ML engineering if his work is governance/audit-focused.`
 };
 
 export const demoResponses = {
-  default: `Yes — this is a strong fit.
+  default: `Yes — this is a strong fit, especially if your main pain is "messy data + unclear ownership + inconsistent execution."
 
-William’s career is built around enterprise environments where the reality is:
-messy data + fragmented ownership + operational complexity + high compliance expectations.
+William’s pattern in enterprise transformation is:
+1) Map reality first: how decisions are currently made, what data sources exist, and where definitions conflict.
+2) Establish a minimum governance layer: owners, definitions, controls, and a cadence (so teams stop debating what’s true).
+3) Deliver early wins that improve decision quality and adoption, then scale the standard.
 
-He has delivered 29 global projects across 55 countries, including:
-• Seagate — Digital Factory Planning Lead (Smart Factory context)
-• KPMG for DOLE — Digital Data Transformation Lead (agriculture / fresh fruit)
-• Orica — Data Management Lead (mining / explosive)
-• L’Oréal — Supply Chain Optimization Lead (travel retail)
-• Johnson & Johnson / Pfizer / Sanofi / Eisai — pharma-grade delivery environments
+For a Series B with messy data infrastructure, the value is not just a new pipeline — it’s getting your org to agree on:
+• what the metrics mean
+• who owns them
+• how exceptions are handled
+• how decisions are audited later
 
-For a messy data infrastructure specifically, the strongest signal is:
-• He doesn’t “solve with tools first” — he fixes definitions, ownership, and operating cadence
-• He builds audit-ready processes: decision traceability, accountability, controls
-• He is effective cross-functionally (business + ops + IT + data teams)
+Questions worth asking: “How would you define the single source of truth?”, “How do you prevent dashboard sprawl?”, and “How do you design controls so we can trust automation and AI later?”`,
 
-What to probe in interview:
-• Can he execute in a small startup team without enterprise support functions?
-• How does he prioritize “quick wins” vs building governance foundations?`,
+  dataCleanup: `His approach to messy data is governance-first, not tooling-first.
 
-  auditReadiness: `William is explicitly oriented toward audit-ready AI delivery.
+He’ll typically:
+• identify the few business-critical metrics and decisions first
+• define data lineage and ownership (who is accountable for definitions and quality)
+• implement lightweight controls: validation checks, exception workflows, and review cadence
+• only then standardize dashboards and automation
 
-If your organization is deploying AI/GenAI, he will focus on:
-• intended use + scope boundaries (so AI doesn’t get used outside its design)
-• controls: what can go wrong + what prevents/detects it
-• evidence: documentation, decision logs, traceability
-• monitoring: drift signals, incident response, escalation
-• regulatory alignment (EU AI Act-style thinking; AI Verify-style principles)
+This avoids the classic failure mode: building a ‘beautiful’ data platform that nobody trusts or uses.`,
 
-This is not "AI policy writing" — it’s operational governance that can survive an audit.`,
+  auditReadiness: `For AI audit readiness, William focuses on evidence.
 
-  transformation: `His transformation style is governance + execution.
+He’ll push for:
+• clear model/system purpose and intended use
+• risk and control mapping (what can go wrong + what prevents/detects it)
+• traceability: versioning, decision logs, and change records
+• monitoring plan: drift/quality signals, incident handling, and accountability
 
-Typical approach:
-1) Map the current reality: process + data lineage + stakeholders + pain points
-2) Agree “what truth is”: definitions + owners + KPI logic
-3) Build lightweight controls: validation, exception handling, review cadence
-4) Deliver quick wins (visible value), then scale the operating model
+This is the difference between “we have an AI policy” and “we can prove control effectiveness in an audit.”`,
 
-He succeeds especially in complex stakeholder environments: supply chain, manufacturing, logistics, pharma.`,
+  failure: `A recurring failure mode in transformation programs is assuming adoption is automatic.
 
-  failure: `His most common failure pattern (and lesson) is not technical — it’s adoption.
+William’s lesson learned: even when the solution is technically correct, adoption fails unless you design:
+• decision rights (who decides what, when)
+• incentives and accountability
+• training and enablement
+• operational cadence to sustain behavior
 
-In transformation projects, even a correct solution can fail when:
-• teams have no ownership
-• definitions differ across stakeholders
-• incentives don’t align
-• there’s no cadence to sustain behavior
+He treats this as part of delivery, not a ‘nice to have’ after the build.`,
 
-His learned discipline is to design adoption:
-owners, decision rights, escalation paths, training, and routines.
-That’s what makes transformations stick.`,
+  leadership: `William leads through structured delivery and cross-functional alignment.
 
-  leadership: `William leads cross-functionally with clarity and evidence.
+He’s strongest when:
+• there are multiple stakeholders with competing priorities
+• data definitions are inconsistent
+• execution needs a practical operating model (cadence, owners, escalation paths)
 
-He has run global programs in complex ecosystems (multiple countries, sites, stakeholders).
-He’s credible with both:
-• business leaders (outcomes, adoption, decision making)
-• technical teams (systems, data, controls, delivery discipline)
-
-He’s not a “title-only leader” — his strength is execution: aligning people, process, and systems to ship outcomes.`
+His style is direct and evidence-driven: define the target, define controls, ship increments, and make tradeoffs explicit.`
 };
 
 export const fitAssessments = {
