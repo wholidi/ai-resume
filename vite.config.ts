@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/ai-resume/", // ✅ IMPORTANT for GitHub Pages project repo
+  
   server: {
     host: "::",
     port: 8080,
