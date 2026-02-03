@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Mail, Linkedin, Github } from "lucide-react";
+import { Menu, X, Mail, Linkedin, Github, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
@@ -53,16 +53,16 @@ const Header = ({ onOpenChat }: HeaderProps) => {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
-          
+
           <a
             href="/ai-resume/William_Hartono_AI.pdf"
             download
-            className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition shadow-md"
+            className="p-2 rounded-lg hover:bg-white/10 text-gray-200 transition"
+            title="CV"
           >
-            CV
+            <Download size={18} />
           </a>
-
-                              
+                             
           {/* GitHub */}
           <a
             href="https://wholidi.github.io/"
