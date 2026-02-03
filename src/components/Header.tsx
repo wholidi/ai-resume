@@ -54,6 +54,18 @@ const Header = ({ onOpenChat }: HeaderProps) => {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
           
+          <a
+            href="/William_Hartono_AI.pdf"
+            download
+            className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition shadow-md"
+          >
+            CV
+          </a>
+
+          
+          
+          
+          
           {/* GitHub */}
           <a
             href="https://wholidi.github.io/"
