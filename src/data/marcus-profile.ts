@@ -1,6 +1,6 @@
-// Marcus Chen's profile data - the core content for the AI and display
+// Profile data - core profile data used by AI and UI
 
-export const marcusProfile = {
+export const profileData = {
   name: "William Hartono",
   title: "Digital Transformation & AI Audit Professional",
   subtitle:
