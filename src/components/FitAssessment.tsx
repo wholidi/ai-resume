@@ -6,7 +6,7 @@ import { fitAssessments } from "@/data/profile";
 type FitType = "strong" | "weak";
 
 const jobDescriptions = {
-  strong: `Senior Platform Engineer — Series B Fintech
+  strong: `AI Governance & Responsible AI Leader — Series B Fintech
 
 We're looking for someone with deep API design experience, comfort with ambiguity, and the ability to lead cross-functional initiatives. You'll own our integration platform serving hundreds of partners...`,
   weak: `Head of Product, Consumer — Series C Mobile App
