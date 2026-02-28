@@ -1,4 +1,4 @@
-import { marcusProfile } from "@/data/marcus-profile";
+import { marcusProfile } from "@/data/profile";
 import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
