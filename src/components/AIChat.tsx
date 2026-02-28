@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Send, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { demoResponses, aiResumeSuggestedQuestions, aiResumeQnA } from "@/data/marcus-profile";
+import { demoResponses, aiResumeSuggestedQuestions, aiResumeQnA } from "@/data/profile";
 
 interface Message {
   role: "user" | "assistant";
