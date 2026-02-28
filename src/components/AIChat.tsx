@@ -15,9 +15,9 @@ interface AIChatProps {
 
 const suggestedQuestions = [
   "Would this person be good for a Series B startup with messy data infrastructure?",
-  "How did they reduce costs by $1.2M? Was it technical or political?",
-  "Tell me about their biggest failure.",
-  "What kind of leadership experience do they have?",
+  "How did you reduce costs by $1.2M? Was it technical or political?",
+  "Tell me about your biggest failure.",
+  "What kind of leadership experience do you have?",
 ];
 
 const AIChat = ({ isOpen, onClose }: AIChatProps) => {
