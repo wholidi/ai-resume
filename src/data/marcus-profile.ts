@@ -368,3 +368,108 @@ export const fitAssessments = {
       "If the role is primarily product-growth or hands-on ML engineering, I may not be your best hire. If it’s transformation + governance + audit readiness, that’s my lane."
   }
 };
+// --- AI Resume: Sharp Q&A (for the "Ask AI about William" experience) ---
+// Use `aiResumeSuggestedQuestions` for quick-prompt buttons and `aiResumeQnA` for curated answers.
+
+export const aiResumeSuggestedQuestions = [
+  "Is he technical — or just another AI governance theorist?",
+  "Can he handle messy, real-world enterprise AI — not just clean demos?",
+  "Does he actually understand the EU AI Act — or just quote it?",
+  "How does he think about AI failure?",
+  "What makes him different from traditional AI consultants?",
+  "Is he more engineering or more governance?",
+  "Can he lead, or does he only advise?",
+  "What kind of companies actually need him?",
+  "Is he focused on compliance or competitive advantage?"
+];
+
+export const aiResumeQnA = [
+  {
+    q: "Is he technical — or just another AI governance theorist?",
+    a: `He builds the systems he governs.
+
+He has deployed AI Verify on AWS to evaluate models for fairness/transparency, built GenAI security workflows, and shipped applied ML work (including predictive modeling experiments).
+
+His governance is grounded in implementation reality — not policy abstraction.
+He understands what breaks because he has built what can break.`
+  },
+  {
+    q: "Can he handle messy, real-world enterprise AI — not just clean demos?",
+    a: `Yes — his core lane is enterprise complexity.
+
+He has led large-scale transformation across multi-country operations and high-compliance environments (manufacturing, supply chain, pharma).
+
+He doesn’t design AI for slides.
+He designs AI for operating environments: owners, definitions, controls, cadence, and traceability.`
+  },
+  {
+    q: "Does he actually understand the EU AI Act — or just quote it?",
+    a: `He operationalizes it.
+
+He translates risk tiers into control architecture, validation workflows, and governance decision forums:
+• classify the system and context
+• map controls (transparency, oversight, data integrity)
+• run evaluation + documentation workflows (audit-ready evidence)
+• embed monitoring + decision rights into the operating model
+
+Compliance is not paperwork.
+It’s architecture.`
+  },
+  {
+    q: "How does he think about AI failure?",
+    a: `Most teams audit components.
+He audits interactions.
+
+He focuses on real-world failure modes: system-to-system coupling, misuse scenarios, adversarial pressure, and governance blind spots.
+
+AI rarely fails because of one bug.
+It fails because “safe parts” combine into unsafe behavior at scale.`
+  },
+  {
+    q: "What makes him different from traditional AI consultants?",
+    a: `Traditional consultants optimize for speed.
+William optimizes for survivability.
+
+He designs AI programs that can withstand:
+• regulatory scrutiny
+• audit evidence demands
+• operational drift
+• stakeholder misalignment
+
+He builds repeatable delivery systems that turn pilots into trusted, production-ready capabilities — with controls, not vibes.`
+  },
+  {
+    q: "Is he more engineering or more governance?",
+    a: `He’s the bridge.
+
+He understands MLOps lifecycle control, model evaluation, GenAI risks (including prompt/misuse considerations), and cloud deployment foundations.
+
+But his edge is translating technical risk into executive accountability: decision forums, owners, escalation paths, and audit-ready artifacts.`
+  },
+  {
+    q: "Can he lead, or does he only advise?",
+    a: `He leads execution.
+
+He has run cross-functional, multi-region transformation delivery and governance support — aligning IT, operations, and compliance teams to ship outcomes.
+
+His leadership style is evidence-first: clarify what “true” means, assign owners, build controls, deliver quick wins, then scale the operating model.`
+  },
+  {
+    q: "What kind of companies actually need him?",
+    a: `Organizations that are past the hype stage.
+
+He’s most valuable when AI moves from experimentation → production, and leadership starts asking:
+“Are we exposed?”
+
+Enterprise GenAI rollout, manufacturing decision systems, high-compliance workflows, and any organization preparing for EU AI Act / audit scrutiny are strong fits.`
+  },
+  {
+    q: "Is he focused on compliance or competitive advantage?",
+    a: `Both — because governance done right is strategic insulation.
+
+He helps organizations build AI that regulators trust, customers accept, and leadership can defend.
+
+The goal isn’t to slow AI down.
+It’s to make scaling safe, controlled, and defensible.`
+  }
+];
