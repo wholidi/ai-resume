@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <p className="text-2xl font-serif text-foreground mb-2">Marcus Chen</p>
-            <p className="text-muted-foreground">Staff Engineer · Platform Infrastructure</p>
+            <p className="text-2xl font-serif text-foreground mb-2">William Hartono</p>
+            <p className="text-muted-foreground">AI Governance & Responsible AI Leader</p>
           </div>
 
           <div className="flex items-center gap-4">
