@@ -1,5 +1,5 @@
 import { MessageSquare } from "lucide-react";
-import { marcusProfile } from "@/data/marcus-profile";
+import { marcusProfile } from "@/data/profile";
 
 interface HeroProps {
   onOpenChat: () => void;
