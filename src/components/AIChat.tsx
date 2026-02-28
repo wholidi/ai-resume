@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Send, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { demoResponses } from "@/data/marcus-profile";
+import { demoResponses, aiResumeSuggestedQuestions, aiResumeQnA } from "@/data/marcus-profile";
 
 interface Message {
   role: "user" | "assistant";
@@ -13,12 +13,7 @@ interface AIChatProps {
   onClose: () => void;
 }
 
-const suggestedQuestions = [
-  "Would this person be good for a Series B startup with messy data infrastructure?",
-  "How did you reduce costs by $1.2M? Was it technical or political?",
-  "Tell me about your biggest failure.",
-  "What kind of leadership experience do you have?",
-];
+const suggestedQuestions = aiResumeSuggestedQuestions;
 
 const AIChat = ({ isOpen, onClose }: AIChatProps) => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -32,10 +27,14 @@ const AIChat = ({ isOpen, onClose }: AIChatProps) => {
   }, [messages, displayedResponse]);
 
   const getResponse = (question: string): string => {
+    // 1) Exact match against the curated Q&A list (the buttons use these verbatim)
+    const exact = aiResumeQnA.find(
+      (item) => item.q.toLowerCase() === question.toLowerCase()
+    );
+    if (exact) return exact.a;
+
+    // 2) Fallback: keyword routing for free-form questions
     const q = question.toLowerCase();
-    if (q.includes("series b") || q.includes("infrastructure") || q.includes("messy")) {
-      return demoResponses.default;
-    }
     if (q.includes("cost") || q.includes("$1.2m") || q.includes("reduce")) {
       return demoResponses.costReduction;
     }
