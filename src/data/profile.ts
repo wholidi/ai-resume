@@ -871,7 +871,7 @@ He is particularly valuable where organizations need:
 
 He is less suited to purely theoretical policy research or pure engineering-specialist roles.`
 
-  }
+  },
 ];
 
 export const marcusProfile = profileData;
