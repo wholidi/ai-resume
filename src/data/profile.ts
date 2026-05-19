@@ -870,6 +870,8 @@ He is particularly valuable where organizations need:
 • transformation discipline
 
 He is less suited to purely theoretical policy research or pure engineering-specialist roles.`
-export const marcusProfile = profileData;
+
   }
 ];
+
+export const marcusProfile = profileData;
