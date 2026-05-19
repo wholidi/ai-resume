@@ -380,7 +380,7 @@ export const aiResumeSuggestedQuestions = [
   "Is he more engineering or more governance?",
   "Can he lead, or does he only advise?",
   "What kind of companies actually need him?",
-  "Is he focused on compliance or competitive advantage?"
+  "Is he focused on compliance or competitive advantage?",
   "Why is William profile relevant for Responsible AI?",
   "Does he have real AI governance experience or only certifications?",
   "How does his Seagate experience relate to enterprise AI governance?",
